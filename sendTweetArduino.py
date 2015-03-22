@@ -1,5 +1,7 @@
 import tweepy
+from datetime import datetime
 
+timeStr = datetime.now().time()
 
 # Consumer keys and access tokens, used for OAuth
 consumer_key = 'FADWhr61GVD5WB9tFCbzEqvHv'
@@ -16,7 +18,7 @@ api = tweepy.API(auth)
 
 def tweetNow():
 	tweet_text = raw_input("Enter a tweet:")
-    	api.update_status(status=tweet_text)
+    	api.update_status(status=tweet_text +"Time:\n " + str(timeStr))
 
 
 while True:
