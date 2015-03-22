@@ -12,7 +12,7 @@ void loop() {
   
   //str = Serial.read();
   if(Serial.available() > 0) {
-    if(Serial.read() == 's'){
+    if(Serial.read() == 's'){ 
        if(Serial.read() == 't')
          if(Serial.read() == 'o')
            if(Serial.read() == 'p')
